@@ -1,0 +1,7 @@
+#!/bin/bash
+
+fonts=xft:Terminus:pixelsize=100,xft:Aegyptus:pixelsize=80
+
+urxvt -bl -g 20x5+690+20 -font "$fonts" -bg black -fg white -letsp 30 -lsp 0 +sb -e tmux attach &
+sleep 4
+urxvt -bl -g 20x5+1960+500 -font "$fonts" -bg black -fg white -letsp 30 -lsp 0 +sb -e tmux attach &
